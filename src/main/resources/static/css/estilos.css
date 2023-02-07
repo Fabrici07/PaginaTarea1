@@ -1,0 +1,370 @@
+
+#encabezado {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 8%;
+    width: 100%;
+    background-color: #496D8D;
+    color: white;
+    padding: 15px;
+}
+
+#encabezado h1 {
+    display: inline;
+}
+
+.descripcion {
+    font-size: 18px;
+
+}
+
+#menuPrincipal {
+    position: fixed;
+    top: 8%;
+    left: 12%;
+    height: 4%;
+    width: 100%;
+    background-color: #cc6600;
+    color: black;
+    line-height: 40px;
+    text-indent: 40%;
+    font-style: italic;
+
+}
+
+#menuPrincipal a:visited {
+    color: black;
+}
+
+#menuPrincipal a:hover {
+    background-color: grey;
+    color: black;
+}
+
+#barraLateral {
+    position: fixed;
+    top: 8%;
+    left: 0;
+    height: 100%;
+    width: 12%;
+    background-color: #666666;
+    color: black;
+}
+
+#piePagina {
+    position: fixed;
+    bottom: 0%;
+    left: 0%;
+    height: 6%;
+    width: 100%;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+}
+
+#figCaption {
+    background-color: black;
+    color: white;
+    font-style: italic;
+    font-size: 80%;
+    padding: 2px;
+    text-align: center;
+
+}
+
+#MVP {
+    
+    text-align: center;
+    
+}
+
+#contenido1 {
+    position: fixed;
+    top: 15%;
+    left: 12%;
+    height: 100%;
+    width: 44%;
+    background-color: #ffffff;
+    color: black;
+    overflow: auto;
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#descripcion1 {
+    font-size: 90%;
+    text-align: center;
+}
+
+#contenido2 {
+    position: fixed;
+    top: 15%;
+    right:  0%;
+    height: 100%;
+    width: 43%;
+    background-color: #ffffff;
+    color: black;
+    overflow: auto;
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+}
+
+#menuPrincipal2 {
+    
+    position: fixed;
+    top: 8%;
+    left: 0;
+    height: 4%;
+    width: 100%;
+    background-color: #cc6600;
+    color: black;
+    line-height: 40px;
+    text-indent: 40%;
+    font-style: italic;
+    
+}
+
+#contenido3 {
+    position: absolute;
+    top: 15%;
+    right:  0%;
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff;
+    color: black;
+    overflow: auto;
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+
+#contenido4 {
+    position: absolute;
+    top: 15%;   
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff;
+    color: black;
+    overflow: auto;
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+
+#contenidoAll {
+    position: absolute;
+    top: 15%;   
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff;
+    color: black;
+    overflow: auto;
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+
+#contenidoEnc {
+    position: absolute;
+    top: 15%;
+    left:  0%;
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff;
+    color: black;
+    overflow: auto;
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+
+* {
+   font-family: Roboto,sans-serif;
+   padding: 0;
+   margin: 0;
+}
+html,body{
+   width: 100%;
+   height: 100%;
+}
+.flexbox{
+   background: #cc6600;
+   width: 100%;
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.buscar{
+   margin: 20px;
+}
+.buscar >h1{
+   color: black;
+   margin-bottom: 0px;
+}
+.buscar>div{
+   display: inline-block;
+   position: relative;
+}
+.buscar>div:after{
+   content: "";
+   background: black;
+   width: 4px;
+   height: 20px;
+   position: absolute;
+   top: 22px;
+   right: 0px;
+   transform: rotate(134deg);
+}
+.buscar >div>input{
+   color: black;
+   font-size: 14px;
+   background: transparent;
+   width: 25px;
+   height: 25px;
+   padding: 10px;
+   border: solid 3px black;
+   outline: none;
+   border-radius: 35px;
+   transition: width 0.5s;
+}
+.buscar >div input::placeholder{
+   color: black;
+   opacity: 0;
+   transition: opacity 150ms ease-out;
+}
+.buscar >div >input:focus::placeholder{
+   opacity: 1;
+}
+.buscar>div>input:focus,
+.buscar>div>input:not(:placeholder-shown)
+{
+   width: 250px;
+}
+
+#contenidoSupp {
+    position: absolute;
+    top: 19.2%;
+    left: 0%;
+    height: 91%;
+    width: 100%;
+    background-color: #cccccc;
+    color: black;
+    overflow: auto;
+}
+
+#link {
+    
+    color: black;
+}
+
+#contenidoTablas {
+    position: absolute;
+    top: 15%;   
+    left: 0;
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff;
+    color: black;
+    overflow: auto;
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+
+#contenidoTablas2 {
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    height: 100%;
+    width: 50%;
+    background-color: #ffffff;
+    color: black;
+    overflow: auto;
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+}
+
+#encabezadoTabla {
+    font-size: 20px;
+    
+    background-color: black;
+    color: orange;
+    text-align: center;
+    
+}
+
+#tablaResumen tr{
+    font-size: 30px;
+    right: 40%
+}
+
+#contenidoH {
+    position: absolute;
+    top: 12%;   
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #666666;
+    color: black;
+    overflow: auto;
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+    overflow: auto;
+}
+
+#contenidoSupp2 {
+    position: absolute;
+    top: 12%;
+    left: 0%;
+    height: 91%;
+    width: 100%;
+    background-color: #cccccc;
+    color: black;
+    overflow: auto;
+}
+
+#contenidoTienda {
+    position: absolute;
+    top: 12%;   
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #cccccc;
+    color: black;
+    overflow: auto;
+    font-size: 80%;
+    font-weight: bold;
+    text-align: center;
+    overflow: auto;
+}
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+
+
